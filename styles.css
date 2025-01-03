@@ -13,6 +13,7 @@ body {
 }
 .top-section {
   display: flex;
+  padding-top: 15px;
   flex-direction: column;
   background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
   width: 100%;
@@ -87,4 +88,47 @@ a {
 }
 .top-section-searchbar-right > input:focus {
   outline: none;
+}
+.main-content {
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+.qualities {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  margin-top: 50px;
+}
+.qualities > div {
+  position: relative;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  height: 240px;
+  overflow: hidden;
+}
+
+.qualities > div > img {
+  position: relative;
+  bottom: 40px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  transform: scale(1.2);
+}
+.qualities-text {
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  position: absolute;
+}
+.qualities-text > h3 {
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.qualities-text > p {
+  margin: 0;
+  font-size: 1.1rem;
 }
