@@ -3,19 +3,25 @@ html {
   padding: 0;
   margin: 0;
 }
-body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
+
 .app {
   font-family: Okra, Helvetica, sans-serif;
+  background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
+  height: 540px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 0 20px;
+}
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .top-section {
   display: flex;
   padding-top: 15px;
   flex-direction: column;
-  background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
   width: 100%;
   box-sizing: border-box;
   height: 540px;
@@ -23,7 +29,7 @@ body {
 .top-links {
   display: flex;
   justify-content: space-between;
-  padding: 10px 130px;
+  padding: 10px 10px;
 }
 .top-right-side {
   display: flex;
@@ -47,8 +53,8 @@ a {
   margin-bottom: 20px;
 }
 .hero > h2 {
-  margin-bottom: 30px;
-  font-size: 2.1rem;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
   color: white;
   font-weight: 400;
 }
@@ -57,7 +63,7 @@ a {
   box-sizing: border-box;
   align-items: center;
   background-color: white;
-  width: 750px;
+  width: 850px;
   border-radius: 10px;
   height: 55px;
   padding: 0 15px;
@@ -89,10 +95,7 @@ a {
 .top-section-searchbar-right > input:focus {
   outline: none;
 }
-.main-content {
-  padding: 0 60px;
-  box-sizing: border-box;
-}
+
 .qualities {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -131,4 +134,58 @@ a {
 .qualities-text > p {
   margin: 0;
   font-size: 1.1rem;
+}
+.collections {
+  margin-top: 100px;
+}
+.collections-p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.collections-p > p {
+  color: #484848;
+}
+.collections > h3 {
+  font-size: 2.3rem;
+  font-weight: 500;
+  margin-bottom: -10px;
+}
+.collections-p > p {
+  font-size: 1.2rem;
+}
+
+.collections-svg > a {
+  font-size: 1.2rem;
+  color: #ff96a1;
+}
+.collections-imgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 15px;
+
+  gap: 15px;
+}
+.collections-img {
+  position: relative;
+  width: fit-content;
+}
+.collections-img > img {
+  width: 100%;
+  height: 330px;
+  border-radius: 8px;
+}
+.collections-img-content {
+  width: 100%;
+  position: absolute;
+  padding: 0 20px;
+  left: 0;
+  bottom: 0;
+  color: white;
+  line-height: 0.3;
+}
+
+.collections-img-content > h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
 }
