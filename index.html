@@ -8,7 +8,148 @@
     <title>Zomato</title>
   </head>
   <body>
+    <div class="user_check_overlay"></div>
+
     <div class="app">
+      <div class="user_check_log_in">
+        <span class="user_check_header"
+          ><h2>Login</h2>
+          <svg
+            class="login_cut"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </span>
+        <span class="user_check_phone"
+          ><select name="country" id="country">
+            <option value="1" data-prefix="+1" data-flag="🇺🇸">+1</option>
+            <option value="91" data-prefix="+91" data-flag="🇮🇳">+91</option>
+            <option value="44" data-prefix="+44" data-flag="🇬🇧">+44</option>
+            <option value="61" data-prefix="+61" data-flag="🇦🇺">+61</option>
+            <option value="81" data-prefix="+81" data-flag="🇯🇵">+81</option>
+          </select>
+          <input type="text" placeholder="Phone" />
+        </span>
+        <button class="user_send">Send One Time Password</button>
+        <p class="or_center">or</p>
+        <button class="user_check_mail">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m7.875 14.25 1.214 1.942a2.25 2.25 0 0 0 1.908 1.058h2.006c.776 0 1.497-.4 1.908-1.058l1.214-1.942M2.41 9h4.636a2.25 2.25 0 0 1 1.872 1.002l.164.246a2.25 2.25 0 0 0 1.872 1.002h2.092a2.25 2.25 0 0 0 1.872-1.002l.164-.246A2.25 2.25 0 0 1 16.954 9h4.636M2.41 9a2.25 2.25 0 0 0-.16.832V12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 12V9.832c0-.287-.055-.57-.16-.832M2.41 9a2.25 2.25 0 0 1 .382-.632l3.285-3.832a2.25 2.25 0 0 1 1.708-.786h8.43c.657 0 1.281.287 1.709.786l3.284 3.832c.163.19.291.404.382.632M4.5 20.25h15A2.25 2.25 0 0 0 21.75 18v-2.625c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125V18a2.25 2.25 0 0 0 2.25 2.25Z"
+            />
+          </svg>
+
+          Continue with Email
+        </button>
+        <button class="user_check_mail">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+            />
+          </svg>
+
+          Sign in With Google
+        </button>
+        <span
+          >New to Zomato? <a class="user_check_signup">Create account</a></span
+        >
+      </div>
+
+      <div class="user_check_sign_up">
+        <span class="user_check_header"
+          ><h2>Sign Up</h2>
+          <svg
+            class="signup_cut"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </span>
+        <form action="submit">
+          <input type="text" placeholder="Full Name" required />
+          <input type="text" placeholder="Email" required />
+          <span class="user_check_name">
+            <input type="checkbox" id="agree" required />
+            <p>
+              I agree to Zomato's
+              <span class="sign_up_red">Terms of Service, Privacy Policy</span>
+              and
+              <span class="sign_up_red">Content Policies</span>
+            </p>
+          </span>
+          <button type="submit" class="user_send">Create Account</button>
+        </form>
+
+       
+        <p class="or_center">or</p>
+
+        <button class="user_check_mail email_signup">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+            />
+          </svg>
+
+          Sign in With Google
+        </button>
+        <span
+          >Already have an account?
+          <a class="user_check_login"> Log in</a></span
+        >
+      </div>
+
       <div class="content">
         <header>
           <div class="top-section">
@@ -34,7 +175,7 @@
                     d="M18.5788 11.8561H18.3151H16.3193C15.7302 11.8561 15.251 12.3353 15.251 12.9253V13.0423C15.251 13.6329 15.7291 14.1107 16.3193 14.1107H16.5845H18.3139H18.5782C19.1693 14.1107 19.646 13.6329 19.6474 13.0423V12.9253C19.6472 12.3353 19.1705 11.8561 18.5788 11.8561Z"
                   ></path>
                 </svg>
-                <a href="https://www.zomato.com/mobile">Get the App</a>
+                <a href="#zomato-app">Get the App</a>
               </div>
               <div class="top-right-side">
                 <a href="https://www.zomato.com/investor-relations"
@@ -43,8 +184,9 @@
                 <a href="https://www.zomato.com/partner-with-us/new/"
                   >Add restaurant</a
                 >
-                <a href="#">Log in</a>
-                <a href="#">Sign up</a>
+                <a class="log_in">Log in</a>
+
+                <a class="sign_up">Sign up</a>
               </div>
             </div>
             <div class="hero">
@@ -78,22 +220,22 @@
                         placeholder="Chandigarh"
                         class="search_bar_inner_location"
                       />
-                      <span
-                        ><svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          class="size-6"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="m4.5 15.75 7.5-7.5 7.5 7.5"
-                          />
-                        </svg>
-                      </span>
+
+                      <svg
+                        class="search_bar_input_svg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m4.5 15.75 7.5-7.5 7.5 7.5"
+                        />
+                      </svg>
                     </div>
                   </div>
                   <div class="top-section-searchbar-right">
@@ -178,7 +320,7 @@
                           d="M14.76 9.040h-4.22l-2.58-4.28c-0.147-0.354-0.489-0.598-0.889-0.598-0.53 0-0.96 0.43-0.96 0.96 0 0.227 0.079 0.436 0.211 0.6l-0.001-0.002 2.86 4.76c0.172 0.278 0.474 0.46 0.82 0.46 0 0 0 0 0.001 0h4.76c0.467-0.070 0.822-0.469 0.822-0.95s-0.354-0.88-0.817-0.949l-0.005-0.001zM10 0c-5.523 0-10 4.477-10 10s4.477 10 10 10c5.523 0 10-4.477 10-10v0c0-5.523-4.477-10-10-10v0zM10 18.58c-4.739 0-8.58-3.841-8.58-8.58s3.841-8.58 8.58-8.58c4.739 0 8.58 3.841 8.58 8.58v0c0 4.739-3.841 8.58-8.58 8.58v0z"
                         ></path>
                       </svg>
-                      <span>Basi Pathana, india</span>
+                      <span>Bassi Pathana, india</span>
                     </p>
                   </div>
                 </div>
@@ -558,7 +700,7 @@
             </div>
           </div>
         </div>
-        <div class="secandory-content">
+        <div class="secandory-content" id="zomato-app">
           <div class="zomato-app">
             <img
               class="app-mobile-img"
@@ -842,6 +984,7 @@
                   />
                 </svg>
                 <svg
+                  style="stroke: black"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -935,6 +1078,7 @@
         </div>
       </footer>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
