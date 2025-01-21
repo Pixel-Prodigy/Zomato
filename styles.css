@@ -318,6 +318,7 @@ input[type="email"]:focus {
   background-color: #ef4f5f;
   border: none;
   padding: 10px 20px;
+  white-space: nowrap;
   width: 135px;
   border-radius: 5px;
   color: white;
@@ -330,4 +331,29 @@ input[type="email"]:focus {
 .app-store-img {
   width: 130px;
   margin-right: 15px;
+}
+.near_me{
+max-width: 1200px;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+margin-top: 50px;
+}
+
+
+.near_me_items{
+  margin-bottom: 18px;
+}
+.near_me_items span svg{
+  height: 20px;
+  transform: rotate(180deg);
+  stroke-width: 3px;
+}
+.near_me h2{
+  font-size: 2rem ;
+  font-weight: 500;
+}
+.near_me_items h4{
+  font-size: 1.5rem;
+  font-weight: 500;
 }
